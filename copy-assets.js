@@ -1,13 +1,13 @@
-import { copyFile, mkdir } from 'fs/promises';
+import { copyFile, mkdir, readdir } from 'fs/promises'; // Import `readdir` directly from `fs/promises`
 import { join } from 'path';
 
-const foldersToCopy = ['HTML', 'CSS', 'js', 'json'];
+const foldersToCopy = ['html', 'css', 'js', 'json'];
 const destDir = 'dist';
 
 async function copyFolder(folder) {
   const destFolder = join(destDir, folder.toLowerCase());
   await mkdir(destFolder, { recursive: true });
-  const files = await fs.promises.readdir(folder);
+  const files = await readdir(folder); // Use `readdir` directly
 
   for (const file of files) {
     await copyFile(join(folder, file), join(destFolder, file));

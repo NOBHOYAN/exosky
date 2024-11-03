@@ -1,0 +1,6 @@
+# Ignore dependencies and build folders
+node_modules/
+dist/
+
+# Ignore gh-pages cache
+node_modules/.cache/gh-pages/

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ExoSky</title>
+    <link rel="stylesheet" href="../css/exosky.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the new CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module" defer></script>
+    <script type="module" src="../js/exosky.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="app">
+    <!-- Preloader -->
+    <div id="preloader">
+        <dotlottie-player src="https://lottie.host/45aecd53-bc10-406c-845f-b33d6eb8dcb9/OBKhfkI8Kz.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+
+    <!-- Main content -->
+    
+    <div id="star-info"></div>
+    <div id="delete">Click Twice to Delete</div>
+ 
+  <div class="zoom-controls">
+    <button class="button" id="zoom-in"><i class="fas fa-search-plus"></i></button>
+    <button class="button" id="zoom-out"><i class="fas fa-search-minus"></i></button>
+</div>
+  
+    <div id="selection-box"></div>
+
+
+    <div id="constellation-form">
+        <label for="constellation-name">Let's name your constellation</label>
+        <div class="input-button-container">
+            <input type="text" id="constellation-name" />
+            <button id="submit-constellation" class="circle-btn done-btn">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button id="cancel-constellation" class="circle-btn cancel-btn">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div id="error-message" style="display:none; color: red; font-size:12px; margin-top: 5px;">Name can't be empty</div>
+    </div>
+    <div id="graphDiv"></div>
+    <div id="poleOrientation">
+        Set Pole Orientation:<br>
+        (degrees +90 to -90)<br>
+        <input type="number" id="pol" step="1" min="-90" max="90" value="0">
+        <button id="set-pol">set</button><br>
+    </div>
+    
+
+    
+    <button class="menu-button" id="menu-button">
+        <i class="fas fa-bars"></i> &nbsp; Tools
+    </button>
+ 
+
+    
+    <button class="ai-button" id="ai-button">
+        <i class="fa-solid fa-comment"></i> &nbsp; Ask AI
+    </button>
+    
+    <div id="chat-box">
+        <div id="chat-header">
+            <i></i> Chat with TaraBhai
+            <i id="close-chat" class="fa-solid fa-xmark"></i> <!-- Close button as icon -->
+        </div>
+        <div id="messages" class="scrollable"></div>
+        <div id="typing-indicator" class="hidden">AI is typing...</div>
+        <div id="gemini" >Created with Gemini. Beware of mistakes.</div>
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Type your message..." class="input-box">
+            <i id="send-button" class="fa-solid fa-paper-plane"></i> <!-- Send button as icon -->
+        </div>
+    </div>
+    
+    
+   
+    
+    <div class="menu" id="menu">
+    
+        <div class="menu-item" id="toggleRotationBtn">
+            <i class="fa-solid fa-pen"></i> &nbsp; Draw Constellation
+        </div>
+    
+        <div class="menu-item" id="selection-button">
+            <i class="fa-solid fa-arrows-to-dot"></i> &nbsp; <span>Drag & Research</span>
+        </div>
+    
+        <div class="menu-item" id="screenshotBtn">
+            <i class="fa-regular fa-image"></i> &nbsp; Save as Image
+        </div>
+    
+        <div class="menu-item" id="downloadPDF">
+            <i class="fa-solid fa-download"></i> &nbsp; Download as PDF
+        </div>
+    
+    </div>
+    
+</body>
+</html>
