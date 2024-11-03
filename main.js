@@ -87,7 +87,7 @@ async function host_setup() {
 ;
     const galaxy = new THREE.Mesh(galaxyGeometry, galaxyMaterial);
     //scene.add(galaxy);
-    await fetchJsonData('/Hosts_info-1.json');
+    await fetchJsonData('./Hosts_info-1.json');
 
     star_group = new THREE.Group();
     planet_group = new THREE.Group();
