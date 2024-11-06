@@ -297,7 +297,7 @@ async function indexjs_setup() {
 (async function fetchData() {
     const id = (window.location.pathname.split('/').filter(segment => segment).pop()) || "1";
   try {
-    const response = await fetch("https://exosky.ndmcbd.com/files/"+id+".json");
+    const response = await fetch("https://ndmcbd.com/json/archive/json/"+id+".json");
 
     if (!response.ok) {
       throw new Error('Network response was not ok');
