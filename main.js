@@ -6,7 +6,7 @@ import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.112/examples/js
 import { UnrealBloomPass } from 'https://cdn.jsdelivr.net/npm/three@0.112/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 
-
+// this is a checkup message, ignore it
 
 let scene;
 let camera;
