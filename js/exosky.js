@@ -295,21 +295,27 @@ async function indexjs_setup() {
     originalConstellationRot.copy(constellation_group.quaternion);
 
 
-(async function fetchData() {
-    const id = (window.location.pathname.split('/').filter(segment => segment).pop()) || "1";
-  try {
-    const response = await fetch("https://ndmcbd.com/json/archive/json/"+id+".json");
-
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    starData = await response.json();
-    load_stars(); 
-    preloader.style.display = 'none';
-  } catch (error) {
-    console.error("Failed to fetch the JSON data:", error);
-  }
-})();
+    (async function fetchData() {
+        // Get the 'starId' parameter from the query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('starId') || "1"; // Default to "1" if starId is not provided
+    
+        try {
+            const response = await fetch(`https://ndmcbd.com/json/archive/json/${id}.json`);
+    
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+    
+            // Parse JSON data and load stars
+            starData = await response.json();
+            load_stars();
+            preloader.style.display = 'none';
+        } catch (error) {
+            console.error("Failed to fetch the JSON data:", error);
+        }
+    })();
+    
 
 
     scene.add(sky_group);
