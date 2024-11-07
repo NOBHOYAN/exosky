@@ -56,7 +56,7 @@ window.addEventListener('mousemove', (event) => {
 window.addEventListener('dblclick', (event) => {
     if (hoveredStar) {
         const starId = hoveredStar.starData.id;
-        window.open(`https://exosky.ndmcbd.com/app/${starId}`, '_blank'); // Open star link in a new tab
+        window.open(`./html/exosky.html?starId=${starId}`, '_blank'); // Open star link in a new tab
     }
 });
 
