@@ -77,18 +77,14 @@ async function host_setup() {
     scene.add(ambientLight);
 
     const textureLoader = new THREE.TextureLoader();
-    const planetTexture = textureLoader.load('https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg');
+   
 
 
     textureLoader.crossOrigin = true;
-    const galaxyGeometry = new THREE.SphereGeometry(4000, 32, 32);
-    const galaxyMaterial = new THREE.MeshBasicMaterial({
-         map: textureLoader.load('https://i.ibb.co.com/7NZ9rWL/Gaia-EDR3-darkened.png'), side: THREE.BackSide 
-        });
-;
-    const galaxy = new THREE.Mesh(galaxyGeometry, galaxyMaterial);
+    
     //scene.add(galaxy);
     await fetchJsonData('./Hosts_info-1.json');
+    console.log("check-up")
 
     star_group = new THREE.Group();
     planet_group = new THREE.Group();
