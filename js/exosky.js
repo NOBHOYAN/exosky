@@ -297,22 +297,18 @@ async function indexjs_setup() {
 
 (async function fetchData() {
     const id = (window.location.pathname.split('/').filter(segment => segment).pop()) || "1";
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-    const targetUrl = `https://ndmcbd.com/json/archive/json/${id}.json`;
+  try {
+    const response = await fetch("https://ndmcbd.com/json/archive/json/"+id+".json");
 
-    try {
-        const response = await fetch(proxyUrl + targetUrl);
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        starData = await response.json();
-        load_stars(); 
-        preloader.style.display = 'none';
-    } catch (error) {
-        console.error("Failed to fetch the JSON data:", error);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
+    starData = await response.json();
+    load_stars(); 
+    preloader.style.display = 'none';
+  } catch (error) {
+    console.error("Failed to fetch the JSON data:", error);
+  }
 })();
 
 
