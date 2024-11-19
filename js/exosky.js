@@ -177,7 +177,7 @@ function load_stars() {
     }
 
     //for marking the galactic north and south pole
-    var pole = stars.pole
+    `var pole = stars.pole
     var npole_ra = pole["ra"];
     var npole_de = pole["dec"];
     var np_color = 0xff0000;
@@ -187,7 +187,7 @@ function load_stars() {
     var spole_ra = 360 - npole_ra;
     var spole_de = -1 * npole_de;
     var spole_color = 0x00000ff;
-    createCross(spole_ra, spole_de, spole_color);
+    createCross(spole_ra, spole_de, spole_color);`
 }
 
 function createCross(pole_ra, pole_de, color) {
