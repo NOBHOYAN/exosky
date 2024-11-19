@@ -133,7 +133,7 @@ function load_stars() {
        
         //var osize = baseSize / Math.pow(1 + vmag, scalingFactor);
         //star size reference was taken from Stellarium.org
-        var osize = (6 - vmag) * 9;
+        var osize = (6 - vmag) * 19;
         //var osize = 55 - (0.35*(vmag + 5.5)^2)
    
 
@@ -155,7 +155,7 @@ function load_stars() {
         var starMesh = new THREE.Mesh(geometry, material);
         
         // Set position and add to scene
-        var normalizedPos = new THREE.Vector3(sy, sz, sx).normalize().multiplyScalar(7000);
+        var normalizedPos = new THREE.Vector3(sy, sz, sx).normalize().multiplyScalar(700);
         starMesh.position.set(normalizedPos.x, normalizedPos.y, normalizedPos.z);
 
         //save original position on an array
@@ -193,9 +193,9 @@ function load_stars() {
 
 function createCross(pole_ra, pole_de, color) {
     //set position in skysphere
-    var npX = 7000 * Math.cos(pole_de) * Math.cos(pole_ra);
-    var npY = 7000 * Math.cos(pole_de) * Math.sin(pole_ra);
-    var npZ = 7000 * Math.sin(pole_de);
+    var npX = 700 * Math.cos(pole_de) * Math.cos(pole_ra);
+    var npY = 700 * Math.cos(pole_de) * Math.sin(pole_ra);
+    var npZ = 700 * Math.sin(pole_de);
 
     const crossSize = 50; // Size of the cross arms
     
