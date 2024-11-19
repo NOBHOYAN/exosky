@@ -173,6 +173,7 @@ function load_stars() {
         
 
         sky_group.add(starMesh);
+        console.log("star added")
         stars_objs.push(starMesh);
     }
 
@@ -349,7 +350,7 @@ function initPostProcessing() {
 
     const bloomPass = new UnrealBloomPass(
         new THREE.Vector2(window.innerWidth, window.innerHeight),
-        2, // Strength(by the time i wrote done these were 0.5, 0.8, 1)
+        0.5, // Strength(by the time i wrote done these were 0.5, 0.8, 1)
         0.5, // Radius
         0.3 // Threshold
     );
