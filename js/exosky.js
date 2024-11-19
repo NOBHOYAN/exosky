@@ -283,7 +283,7 @@ async function indexjs_setup() {
     hemi_light = new THREE.HemisphereLight(0x21266e, 0x080820, 0.2);
     scene.add(hemi_light);
 
-    camera.position.z = -0.01;
+    camera.position.z = -700;
 
     // Create groups
     sky_group = new THREE.Group();
