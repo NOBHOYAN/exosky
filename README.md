@@ -1,6 +1,7 @@
 # Exosky
 
 **Our project can be explored from this link:** https://nobhoyan.github.io/exosky/
+
 [Note: It might take up to 15 seconds for the page to load properly]
 
 ## Aim
