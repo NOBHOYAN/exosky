@@ -81,9 +81,9 @@ For Earth, the stars follows the galactic equator line. Considering near disk-sh
 
 ![image](https://github.com/user-attachments/assets/2090a5db-7ce0-4c6c-b5fd-23074912ee42)
 ### Team
-** 'N'afiul Haque - Team Leader, Front-end & Back-end Developer **
-** Hritom Sarker 'O'yon - Researcher **
-** 'B'ayezid Bostami - Data Anaylist **
-** 'H'asib Khan - Back-end Developer **
-** Shams Khan 'O'mik - Front-end Developer **
-** 'Yan'na Lorraine - Designer **
+**'N'afiul Haque - Team Leader, Front-end & Back-end Developer** <br/>
+**Hritom Sarker 'O'yon - Researcher** <br/>
+**'B'ayezid Bostami - Data Anaylist** <br/>
+**'H'asib Khan - Back-end Developer** <br/>
+**Shams Khan 'O'mik - Front-end Developer** <br/>
+**'Yan'na Lorraine - Designer**
