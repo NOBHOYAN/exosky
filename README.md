@@ -80,3 +80,10 @@ We calculated the cartesian coordinates of the star from the ExoHost's reference
 For Earth, the stars follows the galactic equator line. Considering near disk-shape of our galaxy and the Sun being near the disk's center of thickness, we used this solution to accurately plot the galactic line of the galactic equator for the ExoHosts.
 
 ![image](https://github.com/user-attachments/assets/2090a5db-7ce0-4c6c-b5fd-23074912ee42)
+### Team
+** 'N'afiul Haque - Team Leader, Front-end & Back-end Developer **
+** Hritom Sarker 'O'yon - Researcher **
+** 'B'ayezid Bostami - Data Anaylist **
+** 'H'asib Khan - Back-end Developer **
+** Shams Khan 'O'mik - Front-end Developer **
+** 'Yan'na Lorraine - Designer **
