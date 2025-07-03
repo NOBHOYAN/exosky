@@ -12,8 +12,8 @@ We first started our project for the NASA Space Apps Challenge 2024. Although we
 **Hritom Sarker 'O'yon** - Researcher <br/>
 **'B'ayezid Bostami** - Data Anaylist <br/>
 **'H'asib Khan** - Back-end Developer <br/>
-**Shams Khan 'O'mik** - Front-end Developer <br/>
-**'Yan'na Lorraine** - Designer
+**Shams Khan S'O'umik** - Front-end Developer <br/>
+**'YAN'na Lorraine** - Designer
 
 ## Aim
 Our goal is to spark curiosity and cultivate a deeper appreciation for astronomy by making space exploration more accessible. Growing up in countries where telescopes are a luxury and light pollution often obscures the beauty of the night sky, WebApps like Stellarium have been invaluable in fueling our fascination with the cosmos. We wanted to take that experience a step further by offering curious high school students like ourselves the chance to explore not only our own planet’s starry nights but also the skies of thousands of exoplanets. By allowing users to create their own constellations in these distant worlds, we aim to make the experience both educational and personal. If our project inspires even one person to explore the vast potential of the universe, we will consider all our efforts a success.
