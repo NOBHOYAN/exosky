@@ -4,6 +4,9 @@
 
 [Note: It might take up to 15 seconds for the page to load properly]
 
+## Introduction
+We first started our project for the NASA Space Apps Challenge 2024. Although we were not selected in that event, we realized that our project could be something much, much bigger. It could make astronomy education easier and present it in a mesmerizing way. Thus, we continued working on our project and expanding the reach of Astronomy education to the farthest corners of Bangladesh. If even a single student becomes curious about the vast universe overhead, we call our project a success. 
+
 ## Aim
 Our goal is to spark curiosity and cultivate a deeper appreciation for astronomy by making space exploration more accessible. Growing up in countries where telescopes are a luxury and light pollution often obscures the beauty of the night sky, WebApps like Stellarium have been invaluable in fueling our fascination with the cosmos. We wanted to take that experience a step further by offering curious high school students like ourselves the chance to explore not only our own planet’s starry nights but also the skies of thousands of exoplanets. By allowing users to create their own constellations in these distant worlds, we aim to make the experience both educational and personal. If our project inspires even one person to explore the vast potential of the universe, we will consider all our efforts a success.
 
